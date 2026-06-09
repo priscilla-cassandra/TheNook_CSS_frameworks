@@ -41,131 +41,187 @@
           Message
         </button>
       </div>
-      <div class="mb-6 grid grid-cols-3 gap-2 md:grid-cols-4">
-        <div>
-          <img
-            src="/images/wuthering_heights.jpg"
-            alt="Wuthering heights book"
-            class="w-32 md:w-40"
-          />
+
+      <div class="md:flex md:flex-row">
+        <!--WRAPPER FOR IMAGE GRID AND FOOTER-->
+        <div class="mb-6 grid grid-cols-3 gap-2 md:grid-cols-4">
+          <div>
+            <img
+              src="/images/wuthering_heights.jpg"
+              alt="Wuthering heights book"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/sprayed_edges.jpg"
+              alt="Books with sprayed edges placed in a bookshelf"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/my_book_nook.jpg"
+              alt="Bookshelf with a corner, filled with books"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/fourth_wing_shelf.jpg"
+              alt="The three books in the empyrean series (Fourth wing)"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/shield_of_sparrows_series.jpg"
+              alt="The two first books in the Shield of Sparrows series"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/kindle.jpg"
+              alt="A kindle with a cover that has a sword motive and a burgundy background."
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/maas_verse.jpg"
+              alt="A row of Sara J. Maas books in a bokshelf"
+              class="w-32 md:w-40"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/currently_reading.jpg"
+              alt="Rites of the Starling book"
+              class="w-32 md:w-40"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src="/images/sprayed_edges.jpg"
-            alt="Books with sprayed edges placed in a bookshelf"
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/my_book_nook.jpg"
-            alt="Bookshelf with a corner, filled with books"
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/fourth_wing_shelf.jpg"
-            alt="The three books in the empyrean series (Fourth wing)"
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/shield_of_sparrows_series.jpg"
-            alt="The two first books in the Shield of Sparrows series"
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/kindle.jpg"
-            alt="A kindle with a cover that has a sword motive and a burgundy background."
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/maas_verse.jpg"
-            alt="A row of Sara J. Maas books in a bokshelf"
-            class="w-32 md:w-40"
-          />
-        </div>
-        <div>
-          <img
-            src="/images/currently_reading.jpg"
-            alt="Rites of the Starling book"
-            class="w-32 md:w-40"
-          />
-        </div>
+        <!--MOVED FOOTER TO INSIDE MAIN-->
+        <footer
+          class="bg-brand md:text-brand fixed right-0 bottom-0 left-0 flex justify-evenly py-3 text-white md:static md:flex-col md:bg-transparent md:pl-4"
+        >
+          <a href="../feed/index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7 md:size-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+          </a>
+
+          <div class="rounded-full border">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7 md:size-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-7 cursor-pointer md:size-9"
+            id="new-post"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+          <a href="/index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7 md:size-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+              />
+            </svg>
+          </a>
+        </footer>
       </div>
     </main>
-    <footer
-      class="bg-brand fixed bottom-0 flex w-full justify-evenly py-3 text-white"
+    <div
+      id="new-post-overlay"
+      class="fixed inset-0 z-50 flex hidden items-center justify-center bg-black/50"
     >
-      <a href="../feed/index.html">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-7"
+      <div class="bg-main relative mx-2 flex flex-col items-center px-8 py-12">
+        <button
+          id="close-button"
+          class="absolute top-3 right-5 w-7 cursor-pointer border text-2xl"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-          />
-        </svg>
-      </a>
-
-      <div class="rounded-full border">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-7"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-          />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h2 class="mb-6 text-xl font-medium">New post</h2>
+        <form>
+          <div class="mb-4 flex flex-col">
+            <label for="image">Upload image</label>
+            <input type="file" name="image" class="bg-inputs py-6 pl-4" />
+          </div>
+          <div class="mb-4 flex flex-col">
+            <label for="caption">Caption</label>
+            <textarea
+              rows="5"
+              cols="20"
+              class="bg-inputs pt-4 pl-4 opacity-70"
+              name="caption"
+            >
+Say something about your post</textarea
+            >
+          </div>
+          <button
+            class="bg-brand mx-auto block rounded-full px-8 py-2 text-white uppercase"
+          >
+            Publish post
+          </button>
+        </form>
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-7"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 4.5v15m7.5-7.5h-15"
-        />
-      </svg>
-      <a href="/index.html">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-7"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
-          />
-        </svg>
-      </a>
-    </footer>
+    </div>
+    <script src="../src/new-post.js"></script>
   </body>
 </html>
