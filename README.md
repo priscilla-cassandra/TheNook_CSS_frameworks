@@ -6,3 +6,21 @@ The Nook is a social media app dedicated to anything related to books.
 - HTML
 - Tailwind CSS
 - Vanilla JavaScript
+
+# Setup
+1. Getting started <br>
+In the terminal, do the following:
+   ```baSH
+   git clone https://github.com/priscilla-cassandra/TheNook_CSS_frameworks.git
+   ```
+
+   ```bash
+   git checkout css-frameworks
+   ```
+
+   ```bash
+   npm install
+   ```
+
+# Running the project
+Open index.html with the Live Server extension in VSCode (right-click on the file -> "Open with Live Server")
