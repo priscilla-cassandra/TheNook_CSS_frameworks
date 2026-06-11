@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login | The Nook</title>
+  </head>
+  <body class="bg-main">
+    <main
+      class="flex min-h-screen flex-col items-center gap-15 pt-40 md:justify-center md:pt-0"
+    >
+      <div class="flex flex-col items-center">
+        <img
+          src="images/nook_logo_brown-removebg-preview.png"
+          alt="The Nook logo, an open book drawn in simple lines"
+          class="w-18 md:w-22"
+        />
+        <h1 class="text-brand text-2xl font-semibold md:text-3xl">The Nook</h1>
+      </div>
+      <div>
+        <form action="/profile/index.html" class="flex w-64 flex-col md:w-80">
+          <div class="mb-4 flex flex-col">
+            <label for="email" class="mb-1 md:text-lg">Email</label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+              class="bg-inputs rounded-sm px-1 py-2.5"
+            />
+          </div>
+          <div class="mb-4 flex flex-col">
+            <label for="password" class="mb-1 md:text-lg">Password</label>
+            <input
+              type="password"
+              name="password"
+              minlength="8"
+              required
+              placeholder="enter password"
+              class="bg-inputs rounded-sm px-1 py-2.5"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-brand mt-2 w-60 cursor-pointer self-center rounded-3xl py-2 text-white uppercase md:w-70"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

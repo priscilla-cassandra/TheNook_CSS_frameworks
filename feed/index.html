@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Feed | The Nook</title>
+  </head>
+  <body class="bg-main">
+    <main class="flex min-h-screen flex-col items-center gap-15 pt-40 pb-18">
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/nook_logo_brown-removebg-preview.png"
+          alt="The Nook logo, an open book drawn in simple lines"
+          class="w-18 md:w-22"
+        />
+        <h1 class="text-brand text-2xl font-semibold md:text-3xl">The Nook</h1>
+      </div>
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="search"
+          class="bg-inputs rounded-full px-10 py-2"
+        />
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="relative">
+        <button
+          type="button"
+          class="peer group bg-inputs w-full rounded-sm px-4 py-2 text-left shadow-sm hover:bg-gray-50 focus:outline-none"
+        >
+          <span>Sort posts by</span>
+          <svg
+            class="float-right inline h-5 w-5 -rotate-90 transition-transform duration-200 group-focus:rotate-0"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#6B7280"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 9-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <ul
+          class="bg-inputs absolute z-50 hidden w-full overflow-hidden rounded-sm peer-focus:block"
+        >
+          <li class="mb-2 cursor-pointer pl-1 hover:bg-gray-100">Post</li>
+          <li class="mb-2 cursor-pointer pl-1 hover:bg-gray-100">Video</li>
+          <li class="mb-2 cursor-pointer pl-1 hover:bg-gray-100">Carousel</li>
+        </ul>
+      </div>
+      <div class="flex flex-col md:flex md:flex-row">
+        <div>
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/wuthering_heights.jpg"
+                alt="Wuthering heights book"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>One of my favorite editions of Wuthering Heights!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/sprayed_edges.jpg"
+                alt="Books with sprayed edges placed in a bookshelf"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>Who doesnt love sprayed edges on a book?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/my_book_nook.jpg"
+                alt="Bookshelf with a corner, filled with books"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>My book nook! My favorite part of the apartment</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/fourth_wing_shelf.jpg"
+                alt="The three books in the empyrean series (Fourth wing)"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>Fourth wing shelf</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/shield_of_sparrows_series.jpg"
+                alt="The two first books in the Shield of Sparrows series"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>Im having a hard time waiting for book 3 to come out</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/kindle.jpg"
+                alt="A kindle with a cover that has a sword motive and a burgundy background."
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>My beloved kindle!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/maas_verse.jpg"
+                alt="A row of Sara J. Maas books in a bokshelf"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>Waiting for ACOTAR 6 is like waiting for your birthday!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-inputs mx-auto mb-4 flex flex-col gap-4 rounded-sm">
+            <div>
+              <img
+                src="/images/currently_reading.jpg"
+                alt="Rites of the Starling book"
+                class="m-4 w-80 rounded-sm lg:w-[28rem]"
+              />
+            </div>
+            <div>
+              <div class="mx-4 flex flex-row items-center">
+                <img
+                  src="/images/priscilla_img_compressed.jpg"
+                  class="h-10 w-10 rounded-full object-cover lg:h-12 lg:w-12"
+                />
+                <p class="ml-1 lg:text-lg">@priscillaneeraas</p>
+              </div>
+              <div class="m-4 w-80 lg:w-[28rem] lg:text-lg">
+                <p>Currently reading</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer
+          class="bg-brand md:text-brand fixed right-0 bottom-0 left-0 py-3 text-white md:static md:ml-2 md:bg-transparent md:pt-6 md:pl-5"
+        >
+          <nav>
+            <ul class="flex w-full justify-evenly md:flex-col md:gap-7">
+              <li>
+                <a href="../feed/index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 md:size-9"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="../profile/index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 md:size-9"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <button id="new-post">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 cursor-pointer md:size-9"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 md:size-9"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </div>
+    </main>
+    <div
+      id="new-post-overlay"
+      class="fixed inset-0 z-50 flex hidden items-center justify-center bg-black/50"
+    >
+      <div class="bg-main relative mx-2 flex flex-col items-center px-8 py-12">
+        <button
+          id="close-button"
+          class="absolute top-3 right-5 w-7 cursor-pointer border text-2xl"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h2 class="mb-6 text-xl font-medium">New post</h2>
+        <form>
+          <div class="mb-4 flex flex-col">
+            <label for="image">Upload image</label>
+            <input type="file" name="image" class="bg-inputs py-6 pl-4" />
+          </div>
+          <div class="mb-4 flex flex-col">
+            <label for="caption">Caption</label>
+            <textarea
+              rows="5"
+              cols="20"
+              class="bg-inputs pt-4 pl-4 opacity-70"
+              name="caption"
+            >
+Say something about your post</textarea
+            >
+          </div>
+          <button
+            class="bg-brand mx-auto block rounded-full px-8 py-2 text-white uppercase"
+          >
+            Publish post
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../src/new-post.js"></script>
+  </body>
+</html>
