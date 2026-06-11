@@ -24,3 +24,9 @@ In the terminal, do the following:
 
 # Running the project
 Open index.html with the Live Server extension in VSCode (right-click on the file -> "Open with Live Server")
+
+# Scripts
+| Script                   | Description                                                                         |
+| ------------------------ | ------------------------------------------------------------------------------------|
+| `npm run dev`            | Tailwind stays running, and regenerate styles when changes are detected             |
+| `npm run build`          | Generates the final tailwind CSS, writes it to css/style.css and minifies the output|
